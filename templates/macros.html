@@ -1,0 +1,96 @@
+{% macro user_template(user) %}
+<div>Profile for {{ user }}</div>
+{% endmacro %}
+
+
+{% macro site_header() %}
+<div class="jumbotron text-center card mt-4 p-4 shadow-lg">
+    <h1>Convolutional networks</h1>
+    <h2>AI Okinawa</h2>
+    <h2>Jakub “Kuba” Kolodziejczyk</h2>
+</div>
+{% endmacro %}
+
+
+{% macro card_header_style() %}
+"h3 card-header text-center bg-success text-white"
+{% endmacro %}
+
+{% macro kuba_profile() %}
+<div class="shadow-lg">
+
+    <div class={{ card_header_style() }}>Kuba Kolodziejczyk</div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="m-4 h4">
+                <strong>出身:</strong> ポーランド<br>
+                <strong>大学:</strong> ロンドン大学, 大阪大学<br><br>
+
+                <strong>過去</strong><br>
+                Nanyang Technological University<br>
+                OIST<br>
+                レキサス<br><br>
+
+                <strong>現在</strong><br>
+                AI Okinawa - 代表<br>
+                LiLz株式会社 - CTO<br>
+                琉球大学 - 非常勤講師
+            </div>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/static/images/profile_image.jpg" class="mx-auto d-block" width="100%">
+        </div>
+
+    </div>
+</div>
+{% endmacro %}
+
+
+{% macro what_can_convolutional_networks_do() %}
+<div class="shadow-lg">
+    <div class={{ card_header_style() }}>What can convolutional networks do</div>
+    <div class="m-4">
+        <div class="h3 text-center">Categorization</div>
+        <img src="/static/images/demo_samples/classification.jpg" width="100%"><br>
+        <div class="h5 text-center text-secondary">grail.cs.washington.edu</div>
+        <hr>
+
+        <div class="h3 text-center">Image retrieval</div>
+        <img src="/static/images/demo_samples/image_retrieval.jpg" width="100%"><br>
+        <div class="h5 text-center text-secondary">grail.cs.washington.edu</div>
+        <hr>
+
+        <div class="h3 text-center">Object detection</div>
+        <img src="/static/images/demo_samples/detection.jpg" width="100%"><br>
+        <div class="h5 text-center text-secondary">SSD: Single Shot MultiBox Detector</div>
+        <hr>
+
+        <div class="h3 text-center">Segmentation</div>
+        <img src="/static/images/demo_samples/segmentation.png" width="100%"><br>
+        <div class="h5 text-center text-secondary">
+            Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation
+        </div>
+        <hr>
+
+        <div class="h3 text-center">Comparison</div>
+        <img src="/static/images/demo_samples/comparison.png" width="50%"><br>
+        <div class="h5 text-center text-secondary">FaceNet: A Unified Embedding for Face Recognition and Clustering</div>
+        <hr>
+
+        <div class="h3 text-center">Image translation</div>
+        <img src="/static/images/demo_samples/image_translation.jpg" width="100%"><br>
+        <div class="h5 text-center text-secondary">
+            Image-to-Image Translation with Conditional Adversarial Networks
+        </div>
+        <hr>
+
+        <div class="h3 text-center">Image generation</div>
+        <img src="/static/images/demo_samples/generation.png" width="100%"><br>
+        <div class="h5 text-center text-secondary">
+            StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks
+        </div><br>
+    </div>
+</div>
+{% endmacro %}
