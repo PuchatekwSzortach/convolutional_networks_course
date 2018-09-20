@@ -168,6 +168,25 @@
 {% endmacro %}
 
 
+{% macro two_dimensional_convolution_with_padding() %}
+<div class="shadow-lg">
+    <div class={{ card_header_style() }}>2D convolution with padding</div>
+
+    <div class="m-4 text-center h5">
+
+        No padding
+        $$ O = I - K + 1 $$
+        <hr>
+        Padding
+        $$ O = I - K + 1 + 2P $$
+
+    </div>
+    <br>
+</div>
+{% endmacro %}
+
+
+
 {% macro two_dimensional_convolution_with_multiple_channels() %}
 <div class="shadow-lg">
     <div class={{ card_header_style() }}>2D convolution with multiple channels</div>
